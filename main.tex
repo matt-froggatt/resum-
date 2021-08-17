@@ -1,0 +1,421 @@
+% ! TEX program = xelatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\newcommand*{\vcenteredhbox}[1]{\begingroup
+\setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Matthew}{Froggatt}{ %\urlstyle{same}\url{http://debarghyadas.com} \\
+    \href{mailto:mattfr@live.ca}{mattfr@live.ca}\hspace{5pt}
+    \fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}
+    %\href{https://www.matt-froggatt.com}{matt-froggatt.com}\hspace{5pt}
+    \fontspec[Path = fonts/quicksand/]{Quicksand-Regular}(905) 467 - 5330
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{minipage}[t]{0.1\textwidth} 
+
+
+%\subsection{Frameworks/APIs}
+
+%\sectionsep
+
+
+%\subsection{Instruments}
+%\location{Over 500 Hours}
+%Bass Guitar\\
+%\location{Under 500 Hours}
+%Piano \textbullet{} Guitar \textbullet{} Trumpet
+%\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%s\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.95\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\runsubsection{Languages}
+C++, C, Python, TypeScript, JavaScript, HTML, CSS\\
+\runsubsection{Tools \& Environments}
+Linux, Windows, Git, Make
+%OpenGL, JavaFX, Bootstrap, Git, Azure DevOps, Linux\\
+%Express.js, node.js,%
+%IntelliJ Idea, Visual Studio Code,%
+
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\descript{Computer Science and Business Double Degree}
+\location{2018 - 2023}
+\runsubsection{University of Waterloo}
+\descript{Candidate for Bachelor of Computer Science}
+%Designing Functional Programs \textbullet{} 93\% 
+%\hspace{10pt}
+%Algorithm Design and Data Abstraction \textbullet{} 93\%
+
+\runsubsection{Wilfrid Laurier University}
+\descript{Candidate for Bachelor of Business Administration}
+%Intro to Business \textbullet{} A 
+%\hspace{10pt}
+%Microeconomics \textbullet{} A+
+%\sectionsep
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{MCAP}
+\descript{Jr. Business Analyst}
+\location{May 2020 - Current}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Trained new hire on company processes and automations that I created
+\item Modernized HR processes by creating input validations and additional automations for HR system
+\end{tightemize}
+%\sectionsep
+
+\runsubsection{MCAP}
+\descript{Jr. Business Analyst Co-op}
+\location{January 2020 - April 2020}
+\begin{tightemize}
+\item Used Excel to create data visualizations which informed the board of directors on the state of the company
+\item Automated HR tasks using complex Excel formulae and macros, saving days of time
+\item Worked with other HR employees to prepare statements to be sent out to over 800 employees
+\end{tightemize}
+%\sectionsep
+
+\runsubsection{Omnivex}
+\descript{Software QA Tester}
+\location{July 2017 - August 2017}
+\begin{tightemize}
+%\item Performed testing in Scrum environment on production software
+\item Used Microsoft Azure to create servers and test Service Fabric programs to ensure bug free software
+\item Collaborated with the development team to identify critical areas for testing, and to report errors
+\item Participated in weekly scrum team meetings to ensure the timely reporting and repair of critical issues
+\end{tightemize}
+%\sectionsep
+
+%\runsubsection{Audio Visual Team}
+%\descript{Member / Leader}
+%\location{September 2015 - June 2018}
+%\begin{tightemize}
+%\item Organized, trained, and led over 30 other high-school students to facilitate smooth and error-free performances and events
+%\item Coordinated with, and provided support for, companies who rented school space ensuring a high-quality and professional customer experience
+%\end{tightemize}
+
+
+
+%\runsubsection{Fortinos}
+%\descript{| Carvery Clerk}
+%\location{August 2016 - December 2016}
+%\begin{tightemize}
+%\item Prepared food to be displayed and served to customers
+%\item Sold food products to customers
+%\item Responsible for till
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{Tansley Woods Rec Centre}
+%\descript{| Volunteer Swimming Instructor}
+%\location{January 2015 - March 2015}
+%\begin{tightemize}
+%\item Instructed young children in various levels of Red Cross Swim Kids programs
+%\end{tightemize}
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+%\runsubsection{Portfolio Site}
+%\descript{| HTML / CSS}
+%\hyperlink{https://github.com/matt-froggatt/fractals}{\location{Source on GitHub}}
+%\begin{tightemize}
+%\item Created a responsive Bootstrap website to showcase my skills and projects
+%\item Set up DNS and SSL certificate through CloudFlare to ensure a smooth and secure experience
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{Simple Text Editor}
+%\descript{| Kotlin and JavaFX}
+%\location{Source on GitHub}
+%\begin{tightemize}
+%\item
+%\end{tightemize}
+%\sectionsep
+
+\runsubsection{Ultimate Tic-Tac-Toe}
+\descript{TypeScript and React}
+\location{In progress}
+\begin{tightemize}
+\item Created a modular front-end which allows for easy future updates and styling
+\item Built decoupled game logic which can easily be used across front-ends
+\end{tightemize}
+%\sectionsep
+
+\runsubsection{WLP4 Compiler}
+\descript{C++}
+\begin{tightemize}
+\item Wrote a compiler for WLP4, a subset of C++, which compiles to MIPS machine code
+\item Created a lexer, parser, type checker, code generator, and assembler
+\end{tightemize}
+%\sectionsep
+
+\runsubsection{Tetris}
+\descript{C++}
+\begin{tightemize}
+\item Wrote fully turn-based version of Tetris, which has both terminal and X Window display modes
+\item Allows for any number of players to play simultaneously, and has various special abilities that the players can use against each other
+\end{tightemize}
+%\sectionsep
+
+%\runsubsection{StarterHacks}
+%\descript{Dialogflow}
+%\begin{tightemize}
+%\item Created a rapid prototype of phone bot to make mental health hotline wait times more constructive
+%\item Used Google's DialogFlow API to talk to callers and get information needed by mental health associates
+%\end{tightemize}
+%\sectionsep
+
+%\href{https://github.com/matt-froggatt/matt-froggatt.github.io}{\runsubsection{Fractal Tree Generator}}
+%\descript{Java}
+%\begin{tightemize}
+%\item Created an object-oriented recursive implementation of a fractal tree using JFrame
+%\item Worked on this project as a fun visual exercise on recursion in an imperative, object-oriented setting
+%\end{tightemize}
+%\sectionsep
+
+%\href{https://github.com/matt-froggatt/canadian-to-american}{\runsubsection{Canadian to American Translator}}
+%\descript{Python}
+%\begin{tightemize}
+%\item Built a Python command line interface that changes Canadian words to their American spellings
+%\item Worked on this project to practice writing object-oriented Python code using the JSON format
+%\end{tightemize}
+%\sectionsep
+
+\runsubsection{Below-6}
+\descript{New Venture Business Project}
+\begin{tightemize}
+\item Collaborated with a group of other students to create a unique and viable business 
+\item Developed a structured and complete business plan, including financial and marketing documents, to ensure future success of the business
+\end{tightemize}
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extracurricular
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Extracurricular}
+%\runsubsection{AV Club}
+%\descript{| Lead}
+%\location{Jan 2014 – Present | Ithaca, NY}
+%\sectionsep
+
+%\sectionsep
+
+%\runsubsection{Pit Band}
+%\descript{| Band Director / Performer}
+%\location{Mar 2018 – May 2018}
+%\begin{tightemize}
+%\item Recruited, organized, performied in, and directed the band for a school performance of the play %\textit{We Will Rock You}
+%\item Worked directly with school teachers, principals, and the director to secure practice space and %equipment for the band
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{Residence Learning Community}
+%\descript{| Music Community}
+%\location{Sept 2018 - Present}
+%\begin{tightemize}
+%\item Performed for Shinerama fundraiser
+%\item On-campus performances
+%\end{tightemize}
+%\sectionsep
+
+%\runsubsection{School Bands}
+%\descript{| Performer}
+%\location{Dec 2014 - June 2015 \& Jan 2018 – June 2018}
+%\begin{tightemize}
+%\item Performed at school spring concert as well as at a regional high-school festival.
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2019        &Wilfrid Laurier University New Veture Competition Semi-Finalist\\
+2018        &Wilfrid Laurier University President's Gold Scholarship Recipient\\ %(\$5,000 / year)
+2018		&ECOO Computer Science Competition First Round Champion\\
+%2017		&Academic Excellence in Computer Engineering Award\\
+%2016		&Academic Excellence in Computer Science Award\\
+
+
+
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+\end{tabular}
+
+
+%\section{References}
+%\begin{tabular}{rll}
+%E-mail@myemail.com | (123) 456-7890		&Name Nameson, Certification. Affiliation. 
+
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies} 
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Coursework}
+%\subsection{Graduate}
+%Advanced Machine Learning \\
+%Open Source Software Engineering \\
+%Advanced Interactive Graphics \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+%\sectionsep
+
+%\subsection{Undergraduate}
+%Information Retrieval \\
+%Operating Systems \\
+%Artificial Intelligence + Practicum \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+\hspace{10pt}
+\vcenteredhbox{\includegraphics[height = 18pt]{Icons/GitHub-Mark-64px.png}}        \space\href{https://github.com/matt-froggatt}{github.com/matt-froggatt}
+\hspace{5pt}
+%\vspace{2pt}
+\vcenteredhbox{\includegraphics[height = 18pt]{Icons/black-white-linkedin.jpg}} \space\href{https://www.linkedin.com/in/matt-froggatt/}{linkedin.com/in/matt-froggatt}    
+%\hspace{5pt}
+%\href{https://matt-froggatt.com}{matt-froggatt.com}\\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+%Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+%\sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
+
