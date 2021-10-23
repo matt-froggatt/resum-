@@ -56,7 +56,7 @@ Last Updated on
 
 % Headings command
 \titleformat{\section}{\color{subheadings}
-\scshape\fontspec[Path = fonts/quicksand/]{Quicksand-Bold}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\fontspec[Path = fonts/quicksand/]{Quicksand-Bold}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{headings}
@@ -67,7 +67,7 @@ Last Updated on
 \fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont \normalsize}
 
 % Descriptors command
-\newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/quicksand/]{Quicksand-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont \normalsize}
+\newcommand{\descript}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/quicksand/]{Quicksand-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont \normalsize}
 
 % Location command
 \newcommand{\location}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/quicksand/]{Quicksand-VariableFont}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont \normalsize}
