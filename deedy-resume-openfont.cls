@@ -60,11 +60,11 @@ Last Updated on
 
 % Subeadings command
 \titleformat{\subsection}{\color{headings}
-\fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+\fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}\fontsize{12pt}{12pt}\selectfont\uppercase}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont \normalsize}
+\fontspec[Path = fonts/quicksand/]{Quicksand-SemiBold}\fontsize{12pt}{12pt}\selectfont\uppercase {#1} \normalfont \normalsize}
 
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/quicksand/]{Quicksand-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont \normalsize}
